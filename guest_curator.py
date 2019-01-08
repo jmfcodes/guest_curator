@@ -299,7 +299,7 @@ def run():
 
     try:
         guest_curator = GuestCurator(api)
-        api.user_stream(guest_curator)
+        api.stream_user(guest_curator)
     except KeyboardInterrupt:
         print("cleaning up...")
         guest_curator.cleanup()
